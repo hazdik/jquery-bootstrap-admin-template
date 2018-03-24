@@ -1,0 +1,79 @@
+.tabs {
+	background: transparent;
+}
+
+.tabs .tab-content {
+	background: white;
+	border-radius: 4px;
+	margin-top: 10px;
+}
+
+.fixed-table-container {
+	padding-bottom: 70px!important;
+}
+
+.tabs ul {
+	border-bottom: 0px!important;
+}
+
+.tabs ul li {
+	background: white !important;
+	border-top: 1px solid #ccc!important;
+	border-left: 1px solid #ccc!important;
+	border-bottom: 1px!important;
+	margin-right: 1px!important;
+	box-shadow: 1px 1px 3px #2d2d2d!important;
+}
+
+
+.tabs ul li a {
+	color: #666!important;
+	border-bottom: 0px!important;
+}
+
+.tabs ul li span:hover {
+	color: #C61010!important;
+}
+
+.tabs ul li a:hover,
+.tabs ul li:hover,
+.tabs ul li:focus {
+	border-bottom: 0px!important;
+}
+
+.tabs ul li:last-child {
+	border-right: 1px solid #049CDB!important;
+}
+
+.tabs ul li.ui-state-active.ui-tabs-active a,
+.tabs ul li.ui-state-active.ui-tabs-active {
+	background: #049CDB!important;
+	color: #fff!important;
+}
+
+.tabs ul li.ui-state-active.ui-tabs-active a:hover,
+.tabs ul li.ui-state-active.ui-tabs-active span:hover {
+	color: #fff!important;
+}
+
+.tabs ul li .fa-times-circle {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	cursor: pointer;
+}
+
+
+/*.ui-tabs .ui-tabs-nav{
+	border-bottom: 0px!important;
+}*/
+
+#tabs>.ui-widget-content {
+	background: white !important;
+	width: 100%;
+	height: auto;
+	min-height: 800px;
+	padding: 10px 15px;
+	margin: 4px 3px;
+	border-radius: 4px;
+}

@@ -1,0 +1,60 @@
+.tabs {
+	background: transparent;
+}
+
+.tabs .tab-content {
+	background: white;
+	border-radius: 4px;
+	margin-top: 0px;
+}
+
+.fixed-table-container {
+	padding-bottom: 70px!important;
+}
+
+.tabs .nav  {
+	border-bottom: 0px!important;
+	padding: 0px!important;
+}
+
+
+/*未选中的普通tab标签样式*/
+.tabs .nav li {
+	border:1px solid #ccc!important;
+	border-bottom: 0px!important;
+	/*margin-right: 1px!important;*/
+}
+.tabs .nav li.ui-state-active.ui-tabs-active{
+	
+}
+/*选中后的字体颜色为黑色*/
+.tabs .nav li.ui-state-active.ui-tabs-active a:hover {
+	color: black!important;
+}
+/*标签内字体未选中颜色为淡黑色*/
+.tabs .nav li a {
+	color: #666!important;
+	border-bottom: 0px!important;
+}
+/*选中的标签背景变白*/
+.tabs .nav li.ui-state-active.ui-tabs-active a,
+.tabs .nav li.ui-state-active.ui-tabs-active {
+	background: white!important;
+	color: #222!important;
+	position:relative;
+	height:43px;
+	border-radius: 4px 8px 0px 0px;
+	border-left:0px!important;
+	border-right:0px!important;
+}
+/*remove span定位*/
+.tabs .nav li .fa-times-circle {
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	cursor: pointer;
+}
+/*remove span:hover变为红色*/
+.tabs .nav li .fa-times-circle:hover {
+	color: #C61010!important;
+}

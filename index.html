@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+  <title>后台管理界面</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/common/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/common/bootstrap-table.css" />
+  <link rel="stylesheet" type="text/css" href="css/common/jquery-ui-1.10.0.custom.css" />
+  <link rel="stylesheet" type="text/css" href="css/templatemo/templatemo_main.css" />
+  <!--动态标签页的样式-->
+  <link rel="stylesheet" type="text/css" href="css/ui-tabs/ui-tabs.css" />
+  <!--manage页面的样式-->
+  
+  <!--login页面的样式-->
+  <link rel="stylesheet" href="page/login/login.css" />
+  <!--register页面的样式-->
+  <link rel="stylesheet" type="text/css" href="page/register/register.css"/>
+  
+  <script src="js/common/jquery.min.js"></script>
+  <script src="js/common/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="js/common/bootstrap.min.js"></script>
+  <script src="js/common/bootstrap-table.js"></script>
+</head>
+<body>
+  <div class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+      <div class="logo">
+        <h1>后台管理界面</h1>
+        <a href="#" data-toggle="modal" data-target="#confirmModal" style="position:absolute;right:80px;top:50%;margin-top:-10px;color:inherit;">
+          <i class="fa fa-sign-out"></i> Logout
+        </a>
+      </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+  </div>
+  <div class="template-page-wrapper">
+    <!--/.navbar-collapse -->
+    <div class="navbar-collapse collapse templatemo-sidebar">
+      <ul class="templatemo-sidebar-menu tabsmenu">
+        <li>
+          <form class="navbar-form">
+            <input type="text" class="form-control" id="templatemo_search_box" placeholder="Search...">
+            <span class="btn btn-default">Go</span>
+          </form>
+        </li>
+        <!-- 点击部分 -->
+       
+        	<li class="active">
+          <a href="#" id="menu1"><i class="fa fa-suitcase"></i>Position</a>
+        </li>
+        <li>
+        	<li>
+          <a href="#" id="menu1"><i class="fa fa-suitcase"></i>User Manage</a>
+        </li>
+        <li>
+          <a href="#" id="menu2"><i class="fa fa-user"></i>Log In</a>
+        </li>
+        <li>
+          <a href="#" id="menu3"><i class="fa fa-user"></i>Register </a>
+        </li>
+        <!-- /点击部分 -->
+      </ul>
+    </div>
+    <div class="templatemo-content-wrapper">
+      <div class="templatemo-content">
+        <!-- 内容部分 -->
+        <div id="tabs2" class="tabs">
+          <ul class="nav">
+            <li>
+            	<a href="#tabs-menu0">Welcome</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+          	<div id="tabs-menu0" class="tab-pane active"><h1>欢迎您！XXX </h1></div>
+            <div id="tabs-menu1" class="tab-pane"></div>
+            <div id="tabs-menu2" class="tab-pane"></div>
+            <div id="tabs-menu3" class="tab-pane"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="templatemo-footer">
+      <div class="templatemo-copyright">
+        <p>Copyright &copy; 2084 Your Company Name</p>
+      </div>
+    </footer>
+    <div id="modals-menu1"></div>
+  </div>
+</body>
+<script>
+  $("#tabs-menu1").load("page/table/table.html");
+  $("#tabs-menu2").load("page/login/login.html");
+  $("#tabs-menu3").load("page/register/register.html");
+  $("#modals-menu1").load("page/modal/modal1.html");
+  
+</script>
+<script src="js/tabs/custom-tabs.js"></script>
+</html>

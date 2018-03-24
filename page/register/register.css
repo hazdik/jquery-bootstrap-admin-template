@@ -1,0 +1,15 @@
+.templatemo-register-form {
+	padding: 40px 100px 300px 0px;
+	max-width: 600px;
+	margin: 0;
+}
+
+.form-horizontal .form-group {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.register-button {
+	width: 100%;
+	border-radius: 6px;
+}
